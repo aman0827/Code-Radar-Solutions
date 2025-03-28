@@ -1,5 +1,4 @@
-include <iostream>
-#include <iomanip> // For setting precision
+#include<stdio.h>
 
 int main() {
     double num;
