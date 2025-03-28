@@ -1,12 +1,12 @@
-#include<stdio.h>
+#include <stdio.h>
 
 int main() {
     double num;
 
-    std::cout << "Enter a double-precision floating-point number: ";
-    std::cin >> num;
+    printf("Enter a double-precision floating-point number: ");
+    scanf("%lf", &num); // Note: %lf is used for doubles in scanf
 
-    std::cout << "You entered: " << std::fixed << std::setprecision(4) << num << std::endl; 
+    printf("You entered: %.4lf\n", num); // %.4lf for 4 decimal places
 
     return 0;
 }
