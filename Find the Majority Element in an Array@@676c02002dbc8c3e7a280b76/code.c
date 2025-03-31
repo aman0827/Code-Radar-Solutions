@@ -20,6 +20,6 @@ int main() {
             break;
         }
     }
-    printf("%d\n", majority);
+    printf(" %d \n", majority);
     return 0;
 }
