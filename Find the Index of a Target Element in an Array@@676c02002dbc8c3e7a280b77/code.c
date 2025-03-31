@@ -1,22 +1,10 @@
 #include <stdio.h>
-
 int main() {
-    int n, target, found = 0;
+    int n, t, a[100], i;
     scanf("%d", &n);
-    int arr[n];
-    for (int i = 0; i < n; i++) {
-        scanf("%d", &arr[i]);
-    }
-    scanf("%d", &target);
-    for (int i = 0; i < n; i++) {
-        if (arr[i] == target) {
-            printf("%d\n", i);
-            found = 1;
-            break;
-        }
-    }
-    if (!found) {
-        printf("-1\n");
-    }
+    for (i = 0; i < n; i++) scanf("%d", &a[i]);
+    scanf("%d", &t);
+    for (i = 0; i < n; i++) if (a[i] == t) { printf("%d\n", i); return 0; }
+    printf("-1\n");
     return 0;
 }
